@@ -1,20 +1,26 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
+  <ion-toolbar color="primary">
+    <ion-title class="ion-text-center">
+      Mega Sena
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="flex-center">
+    <ion-card>
+      <ion-item class="logo" lines="none">
+        <img src="https://www.lottoland.com/cms/5be457f50eb358036ab991b5/lt-megasena.x2.png">
+      </ion-item>
+      <ion-item lines="none">
+        <ion-range class="range" name="jogos" pin="true" min="6" max="15" step="1" snaps="true" ticks="true" color="primary" value="6"
+          (ionChange)="onChange($event)">
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+          <ion-label slot="start">6</ion-label>
+          <ion-label slot="end">15</ion-label>
+        </ion-range>
+      </ion-item>
+      <ion-button class="reange" color="primary" expand="block" (click)="sortearNumeros()">Sortear</ion-button>
+    </ion-card>
   </div>
 </ion-content>

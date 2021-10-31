@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title class="ion-text-center">
+      Resultado
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="flex-center">
+    <ion-card>
+      <ion-item class="logo" lines="none">
+        <img src="https://www.lottoland.com/cms/5be457f50eb358036ab991b5/lt-megasena.x2.png">
+      </ion-item>
+      <hr>
+      <ion-item lines="none" class="item-text-wrap">
+        <ion-text color="primary">
+          <div class="ext"><h1>{{resultado}}</h1></div>
+        </ion-text>
+      </ion-item>
+      <hr>
+      <ion-button class="reange" color="primary" expand="block" (click)="novoSorteio()">Novo Sorteio</ion-button>
+    </ion-card>
+  </div>
+</ion-content>
