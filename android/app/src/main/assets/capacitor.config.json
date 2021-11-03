@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "megasena",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

@@ -40,9 +40,8 @@ ion-card{
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  justify-items: space-evenly;
 
-  width: 100%;
+  width: auto;
   margin: 10px;
   --background: transparent;
   --ion-color-base: transparent ;
@@ -54,8 +53,8 @@ ion-col{
 }
 
 hr{
-  border-top: 1px solid;
-  width: 100%;
+  border-top: 2px solid;
+  width: 300px;
   color: #e2e2e2;
 }
 
